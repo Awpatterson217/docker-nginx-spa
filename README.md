@@ -30,7 +30,7 @@ Set the following environmental variable via the docker run command or docker-co
 SPA_HELLO_WORLD=Yes
 ```
 
-This environmental will then be available under the ```window.__spa_env.env```
+This environmental will then be available under the ```window.__spa.env```
 object, accessible as ```window.__spa.env['SPA_HELLO_WORLD']```
 
 # Inheriting
