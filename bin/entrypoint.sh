@@ -5,7 +5,7 @@ set -e
 export SPA_ENV_ENABLED=1
 
 LIVE_JS_PATH="/usr/share/nginx/html/spa-env.js"
-LIVE_JS_HEADER="(function(){window.__spa=window.__spa||{};window__spa.env="
+LIVE_JS_HEADER="(function(){window.__spa=window.__spa||{};window.__spa.env="
 LIVE_JS_FOOTER=";})();"
 
 rm -f $LIVE_JS_PATH;
