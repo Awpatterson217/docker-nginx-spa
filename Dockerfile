@@ -12,11 +12,7 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 COPY ./bin/entrypoint.sh /root/entrypoint.sh
 RUN chmod +x /root/entrypoint.sh
 
-# Copy our compiled SPA files
-COPY ./target/dist /usr/share/nginx/html
-
-EXPOSE 80
-EXPOSE 443
+EXPOSE 80 443
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 CMD ["nginx"]
