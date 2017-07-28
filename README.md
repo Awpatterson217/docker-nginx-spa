@@ -36,7 +36,7 @@ object, accessible as ```window.__spa.env['SPA_HELLO_WORLD']```
 # Inheriting
 To inherit from this Dockerfile within your projects, use the following template:
 ```
-FROM docker-nginx-spa:1.0.0
+FROM pavlovmedia/docker-nginx-spa:1.0.0
 
 MAINTAINER Yalda Kako <ykako@pavlovmedia.com>
 
